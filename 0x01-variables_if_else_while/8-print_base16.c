@@ -5,16 +5,18 @@
  */
 int main(void)
 {
+	char c;
 	int i;
-	char hexvalues[] =
-		"0123456789abcdef";
-	for (i = 0; i < 16; i++)
+
+	for (i = 0; i < 10; i++)
 	{
-		putchar(hexvalues[i]);
-		{
-			putchar(hexvalues[i]);
-		}
-		putchar('\n');
-		return (0);
+		putchar(i + '0');
 	}
+	for (c = 'a'; c < 'g'; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
+
+	return (0);
 }
