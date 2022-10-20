@@ -7,14 +7,13 @@
  */
 void print_numbers(void)
 {
-	int a = 0;
+	int i;
 
-	while (a < 10)
+	i = 0;
+	while (i < 10)
 	{
-		if (a != 2 && a != 4)
-			_putchar(a + '0');
-
-		a++;
+		_putchar(i + '0');
+		i++;
 	}
 	_putchar('\n');
 }
